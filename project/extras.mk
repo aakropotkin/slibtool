@@ -15,6 +15,13 @@ RAPUNCEL = rclibtool
 RAPUNDEL = rdlibtool
 RAPUNJEL = rdclibtool
 
+M4FILES  = m4/slibtool.m4
+
+install-aclocal: $(M4FILES)
+	mkdir -p $(DESTDIR)$(DATADIR)/aclocal
+	cp $(M4FILES) $(DESTDIR)$(DATADIR)/aclocal/
+
+
 install-app-extras:
 	mkdir -p $(DESTDIR)$(BINDIR)
 
