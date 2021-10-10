@@ -17,9 +17,9 @@ RAPUNJEL = rdclibtool
 
 M4FILES  = m4/slibtool.m4
 
-install-aclocal: $(M4FILES)
-	mkdir -p $(DESTDIR)$(DATADIR)/aclocal
-	cp $(M4FILES) $(DESTDIR)$(DATADIR)/aclocal/
+install-m4: $(M4FILES)
+	mkdir -p $(DESTDIR)$(PKGDATADIR)
+	cp $(M4FILES) $(DESTDIR)$(PKGDATADIR)/
 
 
 install-app-extras:

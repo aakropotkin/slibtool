@@ -72,6 +72,7 @@ LOCALSTATEDIR		= @localstatedir@
 RUNSTATEDIR		= @runstatedir@
 DATAROOTDIR		= @datarootdir@
 DATADIR			= @datadir@
+PKGDATADIR	= @datadir@/$(PACKAGE)
 INFODIR			= @infodir@
 LOCALEDIR		= @localedir@
 HTMLDIR			= @htmldir@
@@ -183,7 +184,7 @@ all:		package-shared package-static app
 install:	package-install-app
 install:	package-install-extras
 install:	install-libs
-install:  install-aclocal
+install:  install-m4
 
 app:		app-tag
 
