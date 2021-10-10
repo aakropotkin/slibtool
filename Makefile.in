@@ -183,6 +183,7 @@ all:		package-shared package-static app
 install:	package-install-app
 install:	package-install-extras
 install:	install-libs
+install:  install-aclocal
 
 app:		app-tag
 
